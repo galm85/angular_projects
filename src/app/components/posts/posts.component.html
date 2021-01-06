@@ -1,0 +1,37 @@
+
+<div class="row">
+  <div class="col-md-12">
+    <h1 class="text-center">Posts Pages</h1>
+  </div>
+</div>
+
+
+<div class="row justify-content-center">
+  <div class="col-md-8 ">
+    <form >
+      <input #name type="text" class="form-control mt-3"  name="name" placeholder="Name">
+      <input #title type="text" class="form-control mt-3"  name="title" placeholder="Title">
+      <textarea #post  name="post" id="post" cols="80" rows="10" class="form-control mt-3"></textarea>
+      <button type="button" (click)="addPost(name,title,post)">Post</button>
+    </form>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <div *ngIf="posts.length ;else noPosts">
+      <div *ngFor="let post of posts">
+      <h3>{{post.title}}</h3>
+      <h6>by: {{post.name}}</h6>
+      <p>{{post.post}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #noPosts>
+  <p><i>There are no Posts....</i></p>
+</ng-template>

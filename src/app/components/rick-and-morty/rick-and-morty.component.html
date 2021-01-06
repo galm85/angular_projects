@@ -1,0 +1,9 @@
+<div *ngIf="characters |async as character" class="d-flex flex-wrap justify-content-center">
+<div *ngFor="let c of character.results" class="mx-2" >
+      <a [routerLink]="['/single-char',c.id]">
+        <img src="{{c.image}}" alt="">
+        <h4>{{c.name}}</h4>
+    </a>
+</div>
+</div>
+
