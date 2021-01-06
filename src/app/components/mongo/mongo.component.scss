@@ -1,0 +1,16 @@
+.my-review{
+  width: 500px;
+  border:solid black 2px;
+  box-shadow: 3px black black;
+  margin: 20px;
+  p{
+    text-align: justify;
+    padding: 10px;
+  }
+  h3,h6{
+    padding: 10px;
+  }
+  img{
+    width: 100%;
+  }
+}

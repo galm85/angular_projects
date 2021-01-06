@@ -8,6 +8,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { RickAndMortyComponent } from './components/rick-and-morty/rick-and-morty.component';
 import { SingleComponent } from "./components/single/single.component";
 import { CalculatorComponent } from "./components/calculator/calculator.component";
+import {MongoComponent} from "./components/mongo/mongo.component"
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path:'calculator',
     component:CalculatorComponent
+  },
+  {
+    path:'mongo-db',
+    component:MongoComponent
   }
 ];
 

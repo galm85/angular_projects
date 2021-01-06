@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { RickAndMortyComponent } from './components/rick-and-morty/rick-and-morty.component';
 import { SingleComponent } from './components/single/single.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { MongoComponent } from './components/mongo/mongo.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
     RickAndMortyComponent,
     SingleComponent,
     CalculatorComponent,
+    MongoComponent,
 
   ],
   imports: [

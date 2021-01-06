@@ -1,0 +1,23 @@
+
+<h1>Getting data from Mongo db</h1>
+
+<div class="row justify-content-center " *ngIf="list | async as games; else noGames"   >
+  <div class="col-md-12 d-flex flex-wrap">
+    <div *ngFor="let game of games" class="my-review">
+      <img src="{{game.img}}" alt="{{game.title}}">
+      <h3>{{game.title}}</h3>
+      <h6>By:{{game.author}} ({{game.createdAt | date:short}})</h6>
+      <p>{{game.body}}</p>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+<ng-template #noGames>
+  <p>
+    loading....
+  </p>
+</ng-template>
