@@ -7,6 +7,7 @@ import { TodoComponent } from "./components/todo/todo.component";
 import { HomeComponent } from "./components/home/home.component";
 import { RickAndMortyComponent } from './components/rick-and-morty/rick-and-morty.component';
 import { SingleComponent } from "./components/single/single.component";
+import { CalculatorComponent } from "./components/calculator/calculator.component";
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'single-char/:id',
     component:SingleComponent
+  },
+  {
+    path:'calculator',
+    component:CalculatorComponent
   }
 ];
 
