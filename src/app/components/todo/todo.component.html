@@ -18,8 +18,11 @@
       <tbody>
         <tr *ngFor="let todo of todos; index as i">
           <td [ngClass]="{completed:todo.completed}">{{todo.title}}</td>
-          <td><button class="btn btn-success float-right" (click)="completed(i)">Completed</button></td>
-          <td><button class="btn btn-danger float-right" (click)="removeTodo(i)">Remove</button></td>
+          <td></td>
+          <td>
+            <button class="btn btn-success ml-2 float-right" (click)="completed(i)">Completed</button>
+            <button class="btn btn-danger float-right" (click)="removeTodo(i)">Remove</button>
+          </td>
         </tr>
       </tbody>
     </table>

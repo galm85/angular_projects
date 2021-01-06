@@ -1,3 +1,9 @@
+
+<h1 class="text-center text-primary">Rick and Morty API</h1>
+<p class=text-center>All the data is from the official Rick and Morty&copy; Api</p>
+<p class=text-center>Choose a character and click on it</p>
+
+
 <div *ngIf="characters |async as character" class="d-flex flex-wrap justify-content-center">
 <div *ngFor="let c of character.results" class="mx-2" >
       <a [routerLink]="['/single-char',c.id]">

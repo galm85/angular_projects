@@ -13,17 +13,17 @@ interface Todo{
 export class TodoComponent implements OnInit {
 
   todos:Todo[]=[
-    {
-      title:"go home",
-      completed:false
-    }
+
 
   ];
 
   addTodo(todo):void{
-    let newTodo:Todo = {title:todo.value,completed:false};
-    this.todos.push(newTodo);
-    todo.value ="";
+    if(todo.value.length){
+      let newTodo:Todo = {title:todo.value,completed:false};
+      this.todos.push(newTodo);
+      todo.value ="";
+
+    }
   }
 
   removeTodo(i){

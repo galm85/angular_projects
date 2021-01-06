@@ -1,6 +1,13 @@
 
-  <div *ngFor="let post of posts | async">
-    <h1>{{post.title}}</h1>
-    <p>{{post.body}}</p>
+<h1 class="text-center text-primary">Getting All posts from Json Placeholder</h1>
+
+<div class="row justify-content-center mt-5">
+  <div class="col-md-8">
+      <div *ngFor="let post of posts | async; index as i">
+      <h1>{{i+1}}){{post.title}}</h1>
+          <p>{{post.body}}</p>
+        </div>
   </div>
+</div>
+
 
